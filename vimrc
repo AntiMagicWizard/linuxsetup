@@ -2,8 +2,13 @@
 " Core
 " =========================
 set nocompatible
-set termguicolors
+
+if has("termguicolors")
+  set termguicolors
+endif
+
 syntax on
+set showcmd
 set number relativenumber
 set nowrap
 set hlsearch
