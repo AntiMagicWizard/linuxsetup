@@ -6,8 +6,8 @@ set termguicolors
 syntax on
 set number relativenumber
 set nowrap
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
 set expandtab
 
 " =========================
@@ -19,7 +19,6 @@ colorscheme codeblocks-light
 " C-specific tuning
 " =========================
 let g:c_syntax_for_h = 1
-let g:c_space_errors = 1
 
 " =========================
 " Python formatting via = and on save
