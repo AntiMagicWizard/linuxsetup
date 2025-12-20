@@ -21,24 +21,18 @@ colorscheme codeblocks-light
 let g:c_syntax_for_h = 1
 
 " =========================
-" Python formatting via = and on save
+" Code Formatting 
 " =========================
-augroup python_format
-    autocmd!
-    " Use autopep8 for = operator
-    autocmd FileType python setlocal equalprg=/usr/bin/autopep8\ -
-    " Format entire file on save
-    autocmd BufWritePre *.py silent! normal! gg=G
-augroup END
+function! FormatBuffer()
+    let v = winsaveview()
+    silent! normal! gg=G
+    call winrestview(v)
+endfunction
 
-" =========================
-" C/C++ formatting via = and on save
-" =========================
-augroup cpp_format
+augroup format_on_save
     autocmd!
-    " Use clang-format for = operator
+    autocmd FileType python setlocal equalprg=/usr/bin/autopep8\ -
     autocmd FileType c,cpp setlocal equalprg=clang-format
-    " Format entire file on save
-    autocmd BufWritePre *.c,*.cpp silent! normal! gg=G
+    autocmd BufWritePre *.py,*.c,*.cpp call FormatBuffer()
 augroup END
 
