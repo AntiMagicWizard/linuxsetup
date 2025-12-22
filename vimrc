@@ -47,3 +47,13 @@ augroup format_on_save
     autocmd BufWritePre *.py,*.c,*.cpp call FormatBuffer()
 augroup END
 
+" =========================
+" Automatically insert closing brackets  
+" =========================
+inoremap ( ()<left>
+inoremap [ []<left>
+inoremap { {}<left>
+inoremap ( ()<left>
+
+" Automatically insert indent new line when pressing enter between braces {}
+inoremap {<CR> {<CR>}<Esc>O
