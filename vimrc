@@ -45,7 +45,7 @@ augroup format_on_save
     autocmd!
     autocmd FileType python setlocal equalprg=/usr/bin/autopep8\ -
     autocmd FileType c,cpp setlocal equalprg=clang-format
-    autocmd BufWritePre *.py,*.c,*.cpp call FormatBuffer()
+    autocmd BufWritePre *.py,*.c,*.cpp,*.h,*.hpp call FormatBuffer()
 augroup END
 
 " =========================
@@ -55,6 +55,8 @@ inoremap ( ()<left>
 inoremap [ []<left>
 inoremap { {}<left>
 inoremap ( ()<left>
+inoremap " ""<left>
+inoremap ' ''<left>
 
 " Automatically insert indent new line when pressing enter between braces {}
 inoremap {<CR> {<CR>}<Esc>O
