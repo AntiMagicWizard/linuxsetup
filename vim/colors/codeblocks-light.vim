@@ -15,60 +15,60 @@ let g:colors_name = "codeblocks-light"
 " =========================
 " Base UI
 " =========================
-highlight Normal        guifg=#000000 guibg=#ffffff   " black on white
-highlight LineNr        guifg=#7f7f7f guibg=#ffffff   " gray on white
-highlight CursorLineNr  guifg=#000000 guibg=#e5e5e5   " black on light gray
+highlight Normal        guifg=#000000 guibg=#ffffff
+highlight LineNr        guifg=#800000 guibg=#ffffff
+highlight CursorLineNr  guifg=#000000 guibg=#e5e5e5
 
 " =========================
 " Preprocessor (#include, #define)
 " =========================
-highlight PreProc       guifg=#008000 gui=NONE       " green
-highlight Include       guifg=#008000 gui=NONE       " green
-highlight Define        guifg=#008000 gui=NONE       " green
-highlight Macro         guifg=#008000 gui=NONE       " green
+highlight PreProc       guifg=#008000 gui=NONE
+highlight Include       guifg=#008000 gui=NONE
+highlight Define        guifg=#008000 gui=NONE
+highlight Macro         guifg=#008000 gui=NONE
 
 " =========================
 " Keywords (return, if, for)
 " =========================
-highlight Statement     guifg=#000080 gui=NONE       " navy blue
-highlight Keyword       guifg=#000080 gui=NONE       " navy blue
-highlight Conditional  guifg=#000080 gui=NONE       " navy blue
-highlight Repeat       guifg=#000080 gui=NONE       " navy blue
+highlight Statement     guifg=#000080 gui=NONE
+highlight Keyword       guifg=#000080 gui=NONE
+highlight Conditional  guifg=#000080 gui=NONE
+highlight Repeat       guifg=#000080 gui=NONE
 
 " =========================
 " Types (int, uint32_t)
 " =========================
-highlight Type          guifg=#0000a0 gui=NONE       " dark blue
-highlight StorageClass  guifg=#0000a0 gui=NONE       " dark blue
-highlight Typedef       guifg=#0000a0 gui=NONE       " dark blue
+highlight Type          guifg=#0000a0 gui=NONE
+highlight StorageClass  guifg=#0000a0 gui=NONE
+highlight Typedef       guifg=#0000a0 gui=NONE
 
 " =========================
 " Constants (numbers, NULL)
 " =========================
-highlight Constant      guifg=#ff00ff gui=NONE       " magenta
-highlight Number        guifg=#ff00ff gui=NONE       " magenta
-highlight Boolean       guifg=#ff00ff gui=NONE       " magenta
-highlight Character     guifg=#ff00ff gui=NONE       " magenta
+highlight Constant      guifg=#ff00ff gui=NONE
+highlight Number        guifg=#ff00ff gui=NONE
+highlight Boolean       guifg=#ff00ff gui=NONE
+highlight Character     guifg=#ff00ff gui=NONE
 
 " =========================
 " Strings
 " =========================
-highlight String        guifg=#800000 gui=NONE       " maroon
+highlight String        guifg=#800000 gui=NONE
 
 " =========================
 " Identifiers & functions
 " =========================
-highlight Identifier    guifg=#000000 gui=NONE       " black
-highlight Function      guifg=#000000 gui=NONE       " black
+highlight Identifier    guifg=#000000 gui=NONE
+highlight Function      guifg=#000000 gui=NONE
 
 " =========================
 " Operators & punctuation
 " =========================
-highlight Operator      guifg=#000000 gui=NONE       " black
-highlight Delimiter     guifg=#000000 gui=NONE       " black
+highlight Operator      guifg=#000000 gui=NONE
+highlight Delimiter     guifg=#000000 gui=NONE
 
 " =========================
 " Comments
 " =========================
-highlight Comment       guifg=#ff00ff gui=NONE       " magenta
+highlight Comment       guifg=#ff00ff gui=NONE
 
